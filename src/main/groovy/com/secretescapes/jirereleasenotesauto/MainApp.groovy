@@ -14,7 +14,7 @@ class MainApp {
 			ReleaseNotes releaseNotes = jiraReleaseNotes.getFixNotes(args[0], args[1])
 			String notesAsHTML = jiraReleaseNotes.formatAsHtml(releaseNotes)
 			File file = new File('.', 'release-notes.html')
-			file << notesAsHTML
+			file.write(notesAsHTML)
 		}
 	}
 }
