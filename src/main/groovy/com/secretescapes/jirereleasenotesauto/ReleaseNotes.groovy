@@ -9,5 +9,5 @@ import groovy.transform.ToString
 class ReleaseNotes {
 
 	String version
-	List<ReleaseNotes> releaseNotes = []
+	List<ReleaseIssue> releaseIssues = []
 }

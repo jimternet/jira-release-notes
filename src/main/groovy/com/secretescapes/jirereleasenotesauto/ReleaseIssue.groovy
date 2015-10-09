@@ -13,5 +13,6 @@ class ReleaseIssue {
 	String link
 	String summary
 	String note
+	String team
 
 }
