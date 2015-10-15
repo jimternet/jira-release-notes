@@ -24,7 +24,7 @@ class HtmlTemplate {
                       <tr style="padding: 0;vertical-align: top;text-align: left;">
                         <td style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight: normal;margin: 0;line-height: 19px;font-size: 14px;border-collapse: collapse !important;">
 		<h6 style="color: #222222;font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1.3;word-break: normal;font-size: 20px;">
-		${releaseIssue.summary}</h6>
+		${releaseIssue.key} - ${releaseIssue.summary}</h6>
 
 
                         </td>
