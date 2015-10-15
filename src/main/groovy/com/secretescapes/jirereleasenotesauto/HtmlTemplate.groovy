@@ -8,7 +8,7 @@ class HtmlTemplate {
 	public static String issueSummary(ReleaseIssue releaseIssue) {
 		"""
 		<p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">-
-		${releaseIssue.id} - ${releaseIssue.summary} - <a href="${releaseIssue.link}" style="color: #ff8c00;text-decoration: none;">Jira ticket »</a></p>
+		<a href="${releaseIssue.link}" style="color: #ff8c00;text-decoration: none;">${releaseIssue.key}</a> - ${releaseIssue.summary}</p>
 		"""
 	}
 
@@ -53,15 +53,7 @@ class HtmlTemplate {
                           ${releaseIssue.note?: "Sorry, no release notes are available!"}</p>
                           <br>
 
-                          <table class="button" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;width: 100%;overflow: hidden;border-radius: 4px;">
 
-                            <tr style="padding: 0;vertical-align: top;text-align: left;">
-                              <td style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 8px 0;vertical-align: top;text-align: center;color: #ffffff;font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight: normal;margin: 0;line-height: 19px;font-size: 14px;display: block;background: #ff8c00;border-collapse: collapse !important;width: auto !important;">
-                                <a href="#" style="color: #ffffff;text-decoration: none;font-weight: bold;font-family: Helvetica, Arial, sans-serif;font-size: 16px;">See it live</a>
-                              </td>
-                            </tr>
-
-                          </table>
 
                         </td>
                         <td class="expander" style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight: normal;margin: 0;line-height: 19px;font-size: 14px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
@@ -85,9 +77,6 @@ class HtmlTemplate {
                           <br>
                           <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Key:<br>
                           ${releaseIssue.key}</p>
-                          <hr style="color: #d9d9d9;background-color: #d9d9d9;height: 1px;border: none;">
-                          <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Created:<br>
-                          ${new Date().format('dd/MM/yyyy')}</p>
                           <hr style="color: #d9d9d9;background-color: #d9d9d9;height: 1px;border: none;">
                           <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Team:<br>
                           ${releaseIssue.team}</p>
