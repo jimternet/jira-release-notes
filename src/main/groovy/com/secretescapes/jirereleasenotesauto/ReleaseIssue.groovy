@@ -10,6 +10,7 @@ class ReleaseIssue {
 
 	String id
 	String key
+	String apiLink
 	String link
 	String summary
 	String note
