@@ -47,7 +47,7 @@ class JiraReleaseNotes {
 		ReleaseNotes releaseNotes = new ReleaseNotes(version: fixVersion)
 		json.issues.each{ issue ->
 			ReleaseIssue releaseIssue = new ReleaseIssue(id: issue.id, key: issue.key, apiLink: issue.self, summary: issue.fields?.summary,
-					note: issue.fields?.customfield_10600, team: issue.fields?.customfield_10500?.value, link: "https://***REMOVED***/browse/${issue.key}")
+					note: issue.fields?.customfield_10600, team: issue.fields?.customfield_10500?.value?:"No team assigned", link: "https://***REMOVED***/browse/${issue.key}")
 			releaseNotes.releaseIssues.add(releaseIssue)
 		}
 		releaseNotes
