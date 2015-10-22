@@ -8,7 +8,7 @@ class HtmlTemplate {
 	public static String issueSummary(ReleaseIssue releaseIssue) {
 		"""
 		<p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">-
-		<a href="${releaseIssue.link}" style="color: #ff8c00;text-decoration: none;">${releaseIssue.key}</a> - ${releaseIssue.summary}</p>
+		<x style="color: #ff8c00;text-decoration: none;">${releaseIssue.key}</x> - ${releaseIssue.summary}</p>
 		"""
 	}
 
