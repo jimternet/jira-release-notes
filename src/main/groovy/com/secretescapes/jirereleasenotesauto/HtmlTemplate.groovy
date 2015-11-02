@@ -5,14 +5,14 @@ package com.secretescapes.jirereleasenotesauto
  */
 class HtmlTemplate {
 
-	public static String issueSummary(ReleaseIssue releaseIssue) {
+	public static String issueSummary(JiraTicket releaseIssue) {
 		"""
 		<p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">-
 		<x style="color: #ff8c00;text-decoration: none;">${releaseIssue.key}</x> - ${releaseIssue.summary}</p>
 		"""
 	}
 
-	public static releaseNote(ReleaseIssue releaseIssue) {
+	public static releaseNote(JiraTicket releaseIssue) {
 		"""
 		<br><br>
  <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
