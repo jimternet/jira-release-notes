@@ -18,6 +18,12 @@ You pass in three parameters to the app and it produces a release-notes.html fil
 
 # How can I run it?
 
+First of all you need to clone the repo and go into it. For those of you that don't know how to do it:
+```
+git clone git@github.com:secretescapes/jira-release-notes.git
+cd jira-release-notes
+```
+
 There are two main ways to run it.
 
 1. Run it through the gradle run command and pass in the three arguments like:
