@@ -63,7 +63,7 @@ We used a few plugins:
 
 * Git - Used to pull app from Git repo - https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin 
 
-# How did we integrate Jenkins?
+# How did we integrate it with Jenkins?
 
 1. We created a job that took in the 3 required params 
 
