@@ -43,6 +43,7 @@ java -jar jirareleasenotes-1.0.jar jiraurl base64encodedlogin 2.81
 * Java 7_80
 * Groovy 2.3.11
 * Gradle 2.2
+* Jira JIRA v7.1.0-OD-02-030
 
 *Please note that it is very likely this will work with other versions, but has only been tested with the above.*
 
