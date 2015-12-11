@@ -100,3 +100,7 @@ input 'Check the release notes sent to your email? Does everything look ok? Once
 //3. Send off to everyone
 build job: 'Jira Automated Release Notes', parameters: [[$class: 'StringParameterValue', name: 'ReleaseVersion', value: "${ReleaseVersion}"], [$class: 'StringParameterValue', name: 'RecipientList', value: 'bcc:everyone@example.com'], [$class: 'StringParameterValue', name: 'ReplyToList', value: 'tech@example.com, product@example.com']]
 ```
+
+# License
+
+This project is fully open source and licensed with the MIT License. In short, it means this is open-source and the only requirement is that if you re-use the project you release it under the MIT license. You can read the LICENSE.md file or read more about MIT licensing here: https://opensource.org/licenses/MIT
