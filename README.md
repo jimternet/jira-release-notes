@@ -47,6 +47,13 @@ java -jar jirareleasenotes-1.0.jar jiraurl base64encodedlogin 2.81
 
 *Please note that it is very likely this will work with other versions, but has only been tested with the above.*
 
+# Jira custom fields
+
+We use two Jira custom fields that we have created ourselves. On each ticket we have a 'Release Version' field (customfield_10600) and a 'Assigned Team' field (customfield_10500). You will have to create these fields yourself in Jira and then make sure their customfield numbers match the ones in the code. Feel free to fork the project and update these values if they don't match.
+
+Check here for more documentation on how to add custom fields in Jira:
+https://confluence.atlassian.com/jira/adding-a-custom-field-185729521.html
+
 # What can I do with this?
 
 Once you get the generated HTML file you can do anything you want with this. Maybe host it on a server so people can view it as a URL, or just email it with an HTML Email client to people. 
