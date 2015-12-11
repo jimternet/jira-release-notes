@@ -2,9 +2,9 @@
 
 # What is this?
 
-Its a pretty simple gradle/groovy application. It pulls some information from JIRA and formats into a nicely formatted HTML template. The HTML template contains a bunch of inline CSS so that it can be viewed in Gmail and most other emails.
+Its a pretty simple gradle/groovy application. It pulls some information from JIRA and formats into a nicely formatted HTML template so your release notes look good, professional and consistent. The HTML template contains a bunch of inline CSS so that it can be viewed in Gmail and most other emails.
 
-You can a blog post about it here:
+You can view a blog post about it here:
 http://tech.secretescapes.com/2015/10/continuous-delivery/automating-release-notes/
 
 # How does it work?
